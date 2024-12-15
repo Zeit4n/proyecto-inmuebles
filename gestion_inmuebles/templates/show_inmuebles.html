@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ title }}{% endblock %}
+{% block main_content %}
+    {% if inmuebles %}
+    <div class="fondo-imagen p-4">
+        <table class="table table-dark redondeado">        
+            <thead>
+                <tr>
+                <th>Tus inmuebles</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center fw-medium">Nombre</td>
+                    <td class="text-center fw-medium">Tipo de inmueble</td>
+                    <td class="text-center fw-medium">Región</td>
+                    <td class="text-center fw-medium">Comuna</td>
+                    <td class="text-center fw-medium">Precio</td>
+                    <td class="text-center fw-medium">Acción</td>
+                </tr>
+                {% for inmueble in inmuebles %}
+                <tr>
+                    <td class="text-center">{{inmueble.nombre}}</td>
+                    <td class="text-center">{{inmueble.id_tipo.tipo_inmueble}}</td>
+                    <td class="text-center">{{inmueble.id_region.nombre}}</td>
+                    <td class="text-center">{{inmueble.id_comuna.nombre}}</td>
+                    <td class="text-center">{{inmueble.precio_mensual}}</td>
+                    <td class="text-center">
+                        <a class="btn btn-outline-primary" href="{% url 'edit_inmueble' inmueble.id %}">
+                            <i class="fa-solid fa-pen"></i>
+                        </a>
+                        <a class="btn btn-outline-danger modal-borrar" data-href="{% url 'delete_inmueble' inmueble.id %}" data-bs-toggle="modal" data-bs-target="#modalDelete">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}            
+            </tbody>
+        </table>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalDelete" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalDeleteLabel">Confirmación</h1>
+                </div>
+                <div class="modal-body">
+                    <p class="">¿Estás seguro que deseas eliminar este inmueble?<br>Este proceso no se puede deshacer.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <a href="#" id="confirmar-eliminacion" class="btn btn-danger">Sí</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="fondo-imagen p-4 justify-content-center">
+        <p class="font-weight-bold">NO TIENES INMUEBLES REGISTRADOS</p>
+        
+    </div>
+    {% endif %}
+{% endblock %}
+{% block extra_js %}
+<script>
+    $('.modal-borrar').on('click', function() {
+        console.log("Hola soy js");
+        const href = $(this).attr('data-href');
+        $('#confirmar-eliminacion').attr('href',href);
+    });
+</script>
+{% endblock %}

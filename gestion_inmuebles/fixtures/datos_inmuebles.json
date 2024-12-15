@@ -1,0 +1,272 @@
+[
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":1,
+        "fields": {
+            "nombre":"proyecto ñuñork",
+            "descripcion":"casa de un piso",
+            "m2_construidos":80,
+            "m2_totales":120,
+            "estacionamientos":2,
+            "habitaciones":3,
+            "banos":2,
+            "direccion":"Avenida Siempre Viva 746",
+            "precio_mensual":1000000,
+            "id_comuna":3,
+            "id_region":1,
+            "id_tipo":1
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":2,
+        "fields": {
+            "nombre":"proyecto ñubronx",
+            "descripcion":"Casa de 2 pisos",
+            "m2_construidos":60,
+            "m2_totales":100,
+            "estacionamientos":1,
+            "habitaciones":3,
+            "banos":2,
+            "direccion":"Las Perdices 1617",
+            "precio_mensual":800000,
+            "id_comuna":3,
+            "id_region":1,
+            "id_tipo":1
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":3,
+        "fields": {
+            "nombre":"proyecto condechocolatin",
+            "descripcion":"Casa de 1 piso",
+            "m2_construidos":60,
+            "m2_totales":100,
+            "estacionamientos":2,
+            "habitaciones":3,
+            "banos":2,
+            "direccion":"Los Naranjos 12909",
+            "precio_mensual":1000000,
+            "id_comuna":2,
+            "id_region":1,
+            "id_tipo":1
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":4,
+        "fields": {
+            "nombre":"proyecto melisilla",
+            "descripcion":"Departamento Home Studio",
+            "m2_construidos":40,
+            "m2_totales":40,
+            "estacionamientos":0,
+            "habitaciones":2,
+            "banos":1,
+            "direccion":"Chamiza 2558",
+            "precio_mensual":400000,
+            "id_comuna":5,
+            "id_region":1,
+            "id_tipo":2
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":5,
+        "fields": {
+            "nombre":"proyecto piña del mar",
+            "descripcion":"Departamento vista al mar",
+            "m2_construidos":60,
+            "m2_totales":60,
+            "estacionamientos":1,
+            "habitaciones":3,
+            "banos":2,
+            "direccion":"Yumbel 259",
+            "precio_mensual":800000,
+            "id_comuna":6,
+            "id_region":2,
+            "id_tipo":2
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":6,
+        "fields": {
+            "nombre":"proyecto antofalombia",
+            "descripcion":"Departamento costa",
+            "m2_construidos":55,
+            "m2_totales":55,
+            "estacionamientos":1,
+            "habitaciones":2,
+            "banos":2,
+            "direccion":"Linderos 2112",
+            "precio_mensual":600000,
+            "id_comuna":14,
+            "id_region":4,
+            "id_tipo":2
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":7,
+        "fields": {
+            "nombre":"proyecto putrefacto",
+            "descripcion":"Incluye piscina",
+            "m2_construidos":100,
+            "m2_totales":150,
+            "estacionamientos":5,
+            "habitaciones":4,
+            "banos":2,
+            "direccion":"El Arenal 2418",
+            "precio_mensual":9000000,
+            "id_comuna":38,
+            "id_region":16,
+            "id_tipo":3
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":8,
+        "fields": {
+            "nombre":"proyecto quintanilla",
+            "descripcion":"para cultivos",
+            "m2_construidos":130,
+            "m2_totales":180,
+            "estacionamientos":4,
+            "habitaciones":3,
+            "banos":2,
+            "direccion":"Porton Ancho 2012",
+            "precio_mensual":1200000,
+            "id_comuna":10,
+            "id_region":2,
+            "id_tipo":3
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":9,
+        "fields": {
+            "nombre":"proyecto que talca",
+            "descripcion":"para turismo",
+            "m2_construidos":150,
+            "m2_totales":200,
+            "estacionamientos":5,
+            "habitaciones":6,
+            "banos":3,
+            "direccion":"Acacias 19997",
+            "precio_mensual":1500000,
+            "id_comuna":18,
+            "id_region":6,
+            "id_tipo":3
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":10,
+        "fields": {
+            "nombre":"proyecto licanroc",
+            "descripcion":"bodeguita",
+            "m2_construidos":20,
+            "m2_totales":20,
+            "estacionamientos":0,
+            "habitaciones":0,
+            "banos":0,
+            "direccion":"Los Geranios 19",
+            "precio_mensual":30000,
+            "id_comuna":17,
+            "id_region":5,
+            "id_tipo":4
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":11,
+        "fields": {
+            "nombre":"proyecto oso",
+            "descripcion":"bodeguilla",
+            "m2_construidos":15,
+            "m2_totales":15,
+            "estacionamientos":0,
+            "habitaciones":0,
+            "banos":1,
+            "direccion":"Juan Humberto Vélez 880",
+            "precio_mensual":20000,
+            "id_comuna":21,
+            "id_region":7,
+            "id_tipo":4
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":12,
+        "fields": {
+            "nombre":"proyecto granada",
+            "descripcion":"El bodegón",
+            "m2_construidos":40,
+            "m2_totales":40,
+            "estacionamientos":0,
+            "habitaciones":0,
+            "banos":2,
+            "direccion":"San Pablo 2076",
+            "precio_mensual":60000,
+            "id_comuna":23,
+            "id_region":8,
+            "id_tipo":4
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":13,
+        "fields": {
+            "nombre":"proyecto provi",
+            "descripcion":"La ofi",
+            "m2_construidos":10,
+            "m2_totales":10,
+            "estacionamientos":1,
+            "habitaciones":0,
+            "banos":1,
+            "direccion":"Suecia 204",
+            "precio_mensual":50000,
+            "id_comuna":4,
+            "id_region":1,
+            "id_tipo":5
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":14,
+        "fields": {
+            "nombre":"proyecto conce",
+            "descripcion":"The office",
+            "m2_construidos":15,
+            "m2_totales":15,
+            "estacionamientos":0,
+            "habitaciones":0,
+            "banos":0,
+            "direccion":"Verde 18",
+            "precio_mensual":25000,
+            "id_comuna":11,
+            "id_region":3,
+            "id_tipo":5
+        }
+    },
+    {
+        "model":"gestion_inmuebles.inmueble",
+        "pk":15,
+        "fields": {
+            "nombre":"proyecto iquiquema",
+            "descripcion":"Vista al mar",
+            "m2_construidos":18,
+            "m2_totales":18,
+            "estacionamientos":2,
+            "habitaciones":0,
+            "banos":1,
+            "direccion":"El Salvador 3480",
+            "precio_mensual":40000,
+            "id_comuna":34,
+            "id_region":14,
+            "id_tipo":5
+        }
+    }
+]

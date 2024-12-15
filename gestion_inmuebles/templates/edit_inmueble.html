@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+<!--<head>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>-->
+{% block title %}{{ title }}{% endblock %}
+{% block main_content %}    
+<div class="fondo-imagen d-flex justify-content-center" >
+    <div class="card transparente border-dark col-md-4 my-4 bg-dark text-white">
+        <div class="card-body">
+            <h3 class="card-title">Cambia los datos de tu inmueble</h3>
+            <form method="post"> 
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Actualizar inmueble</button>
+                {% if error %}
+                <p>{{error}}</p>
+                {% endif %}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

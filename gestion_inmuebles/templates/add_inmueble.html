@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ title }}{% endblock %}
+{% block main_content %}
+<div class="fondo-imagen d-flex justify-content-center" >
+    <div class="card transparente border-dark col-md-4 my-4 bg-dark text-white">
+        <div class="card-body">
+            <h3 class="card-title">Datos de nuevo inmueble</h3>
+            <form method="post"> 
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit" name="add_inmueble">Añadir inmueble</button>
+                {% if error %}
+                <p>{{error}}</p>
+                {% endif %}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

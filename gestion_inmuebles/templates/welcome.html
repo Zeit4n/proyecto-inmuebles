@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} {{ title }} {% endblock %}
+{% block main_content %}
+<div class="fondo-imagen p-4">
+    <h1 class="montserrat-welcome text-white m-md-4">¡Bienvenido {{ usuario.username }}!</h1>
+    <div class="redondeado transparente">
+        <p class="p-welcome m-4">Datos</p>
+        <!--<div class="container-fluid d-flex">
+            <div class="col-md-6">
+                {% if usuario.img_profile %}
+                    <img src="{{ usuario.img_profile.url }}" alt="Imagen de perfil">
+                {% else %}
+                    <h3 class="text-center m-4"> NO HAY IMAGEN</h3>
+                {% endif %}
+            </div>-->
+            <ul class="col-md-6 px-4 mx-3 redondeado font-weight-bold">
+                <li>Nombre: {% if usuario.first_name %} {{usuario.first_name}} {% else %} - {% endif %}</li>
+                <li>Apellido: {% if usuario.last_name %} {{usuario.last_name}} {% else %} - {% endif %}</li>
+                <li>Email: {{usuario.email}}</li>
+                <li>Descripcion: {% if usuario.description %} {{usuario.description}} {% else %} - {% endif %}</li>
+                <li>Tipo de usuario: {{tipo_usuario}} </li>
+            </ul>
+        <p class="p-welcome m-4">Puedes realizar cualquiera de las siguientes acciones</p>
+        <div class="row pb-4">
+            <div class="col-12 col-md-6 d-flex justify-content-center marg-btn">
+                <form method="POST">
+                    {% csrf_token %}
+                    <button class="pad-btn" type="submit" name="edit">Modificar datos de usuario</button>
+                </form>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center marg-btn">                
+                <form method="POST">
+                    {% csrf_token %}
+                    <button class="pad-btn" type="submit" name="search">Ver inmuebles disponibles</button>
+                </form>
+            </div>
+        </div>
+        {% if tipo_usuario == 'propietario' %}
+        <div class="row pb-4">
+            <div class="col-12 col-md-6 d-flex justify-content-center marg-btn">
+                <form method="POST">
+                    {% csrf_token %}
+                    <button class="pad-btn" type="submit" name="add_inmueble">Añadir inmueble</button>
+                </form>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center marg-btn">                
+                <form method="POST">
+                    {% csrf_token %}
+                    <button class="pad-btn" type="submit" name="edit_inmueble">Editar inmueble</button>
+                </form>
+            </div>
+        </div>
+        {% endif %}
+        <!-- Aquí debo añadir un condicional acerca del grupo al que pertenece el usuario -->
+    </div>
+</div>
+{% endblock %}
+

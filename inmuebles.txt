@@ -1,0 +1,15 @@
+{"comuna": "Providencia", "nombre": "proyecto provi", "descripcion": "La ofi"}
+{"comuna": "Iquique", "nombre": "proyecto iquiquema", "descripcion": "Vista al mar"}
+{"comuna": "Quintero", "nombre": "proyecto quintanilla", "descripcion": "para cultivos"}
+{"comuna": "Viña del Mar", "nombre": "proyecto piña del mar", "descripcion": "Departamento vista al mar"}
+{"comuna": "Antofagasta", "nombre": "proyecto antofalombia", "descripcion": "Departamento costa"}
+{"comuna": "Las Condes", "nombre": "proyecto condechocolatin", "descripcion": "Casa de 1 piso"}
+{"comuna": "Concepción", "nombre": "proyecto conce", "descripcion": "The office"}
+{"comuna": "Putre", "nombre": "proyecto putrefacto", "descripcion": "Incluye piscina"}
+{"comuna": "Osorno", "nombre": "proyecto oso", "descripcion": "bodeguilla"}
+{"comuna": "Ñuñoa", "nombre": "proyecto ñuñork", "descripcion": "casa de un piso"}
+{"comuna": "Ñuñoa", "nombre": "proyecto ñubronx", "descripcion": "Casa de 2 pisos"}
+{"comuna": "Licanray", "nombre": "proyecto licanroc", "descripcion": "bodeguita"}
+{"comuna": "Melipilla", "nombre": "proyecto melisilla", "descripcion": "Departamento Home Studio"}
+{"comuna": "Talca", "nombre": "proyecto que talca", "descripcion": "para turismo"}
+{"comuna": "Graneros", "nombre": "proyecto granada", "descripcion": "El bodegón"}

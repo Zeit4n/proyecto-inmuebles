@@ -1,0 +1,46 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block title %}{{ title }}{% endblock %}
+{% block main_content %}
+    <!-- <div class="fondo-imagen">
+         Aquí falta añadir clases para mejorar la vista 
+        <div class="d-flex flex-wrap flex-column flex-lg-row align-items-center justify-content-lg-around py-3">
+            {% if all_inmuebles %} 
+                {% for inmueble in all_inmuebles %}
+                    <div class="card transparente col-10 col-md-3 py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">{{inmueble.nombre}}</h5>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+            <h1>No existen inmuebles registrados en el sitio</h1>
+            {% endif %}
+        </div>
+    </div> -->
+    <div class="fondo-imagen justify-content-center">
+        <div class="container d-flex flex-wrap flex-column flex-lg-row align-items-center justify-content-lg-around py-3">
+            {% if all_inmuebles %}
+                {% for inmueble in all_inmuebles %}
+                    <div class="card transparente col-10 col-lg-3 my-4 mx-3">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ inmueble.nombre }}</h5>
+                            <p class="card-text">
+                                Región: {{ inmueble.id_region }}<br>
+                                Comuna: {{ inmueble.id_comuna }}<br>
+                                Inmueble: {{ inmueble.id_tipo }}<br>
+                                Propietario: {{ inmueble.id_propietario }}<br>
+                                <hr style="border: 1px solid #000 ;width: 100%;">
+                                <p class="font-weight-bold">{{ inmueble.precio_mensual }} CLP</p>
+                                <a href="#">Ver más</a>
+                            </p>
+                            <!--<p class="card-text">Comuna: {{ inmueble.id_comuna }}</p>-->
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <h1>No existen inmuebles registrados en el sitio</h1>
+            {% endif %}
+        </div>
+    </div>    
+{% endblock %} 

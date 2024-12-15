@@ -1,0 +1,50 @@
+[
+    {
+        "model":"auth.user",
+        "pk":2,
+        "fields":{
+            "username":"sebas",
+            "password":"Sebas1234.",
+            "email": "sebas@gmail.com",
+            "first_name": "Sebastian",
+            "last_name": "Tancara",
+            "is_active": true,
+            "is_staff": false,
+            "is_superuser": false,
+            "last_login": null,
+            "date_joined": "2023-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model":"auth.user",
+        "pk":3,
+        "fields":{
+            "username":"lala",
+            "password":"Lalola1234.",
+            "email": "lalolanda@gmail.com",
+            "first_name": "Eduardo",
+            "last_name": "Landa",
+            "is_active": true,
+            "is_staff": false,
+            "is_superuser": false,
+            "last_login": null,
+            "date_joined": "2023-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model":"auth.user",
+        "pk":4,
+        "fields":{
+            "username":"elba",
+            "password":"Elbalazo1234.",
+            "email": "elba.lazo@gmail.com",
+            "first_name": "Elba",
+            "last_name": "Lazo",
+            "is_active": true,
+            "is_staff": false,
+            "is_superuser": false,
+            "last_login": null,
+            "date_joined": "2023-01-02T00:00:00Z"
+        }
+    }
+]
